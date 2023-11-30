@@ -1,0 +1,1 @@
+https://connectors.windsor.ai/facebook?api_key=cb9ffbcf9dedf1ff792a7df99e7ea53120a9&date_preset=last_7d&select_accounts=335302090981771&fields=action_values_omni_purchase,campaign,clicks,cpc,cpm,ctr,date,frequency,impressions,reach,spend,website_purchase_roas_offsite_conversion_fb_pixel_purchase

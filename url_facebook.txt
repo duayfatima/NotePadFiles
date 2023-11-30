@@ -1,0 +1,12 @@
+https://connectors.windsor.ai/all?api_key=d49bac6bfc1efdefb557d6202dbe4aeb1b9f&
+date_preset=last_28d&fields=account_name,action_values_omni_purchase,actions_omni_purchase,
+catalog_segment_value_omni_purchase_roas,date,spend,website_purchase_roas_offsite_conversion_fb_pixel_purchase
+&_renderer=powerbi
+
+
+
+
+https://connectors.windsor.ai/all?api_key=d49bac6bfc1efdefb557d6202dbe4aeb1b9f&
+date_preset=last_28d&fields=account_name,action_values_omni_purchase,actions_omni_purchase,
+catalog_segment_value_omni_purchase_roas,date,spend,website_purchase_roas_offsite_conversion_fb_pixel_purchase
+&_renderer=powerbi

@@ -1,0 +1,37 @@
+import pandas as pd
+import requests
+from datetime import datetime, timedelta
+
+# API endpoint URL
+api_url = 'https://bitrix.pk/Rest/Stallion/Get_Parcel_Position'
+
+# Function to fetch data from the API using a POST request with specific dates
+def fetch_data_from_api(from_date, to_date):
+    query_params = {
+        'FromDate': from_date,
+        'ToDate': to_date
+    }
+
+    response = requests.post(api_url, params=query_params)
+
+    if response.status_code == 200:
+        return response.json()
+    else:
+        raise Exception(f"Failed to fetch data from API. Status Code: {response.status_code}")
+
+if __name__ == '__main__':
+    # Calculate the date range
+    to_date = datetime.utcnow() - timedelta(days=1)
+    from_date = datetime.utcnow() - timedelta(days=90)  # 3 months back from the current day-1
+
+    # Convert dates to string format
+    from_date_str = from_date.strftime('%Y-%m-%d')
+    to_date_str = to_date.strftime('%Y-%m-%d')
+
+    data = fetch_data_from_api(from_date_str, to_date_str)
+
+    # Convert the JSON data to a DataFrame
+    Stallions = pd.DataFrame(data)
+
+    # Print the DataFrame (for verification)
+    print(Stallions)

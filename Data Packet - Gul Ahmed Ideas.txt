@@ -1,0 +1,8 @@
+{
+  "UserName": "Test1_4G132",
+  "Password": "Dummy123",
+  "dateFrom": "2023-04-5T09:42:33.097Z",
+  "dateTo": "2023-07-4T09:42:33.097Z",
+  "AccountNumber": "4G132",
+  "locationID": ""
+}
